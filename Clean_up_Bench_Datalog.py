@@ -1,3 +1,9 @@
+#TODO break code in to functions according to clean code principles
+#The data type row addition function is obsolete now with new vw=ersions of EDA insfrastructure
+
+
+
+
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import os , time
 import glob
