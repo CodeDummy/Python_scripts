@@ -4,6 +4,8 @@
 # takes command line strings : start, lunch start,lunch end,end and record the time when each command is applied
 # when end is issued ,calculate total working time that day start-end-lunch break
 # at the end of the month calculate total working hours
+#TODO How to handle holidays?
+
 
 
 from datetime import datetime
@@ -43,6 +45,7 @@ def enter_todays_date_in_file():
 
 # this method creates a new timesheet if it does not exist in the root path
 def create_timesheet():
+    #TODO Month summary page
     # check if a timesheet.xlsx exists
     if os.path.isfile("timesheet.xlsx"):
         print("File exists")
@@ -70,10 +73,14 @@ def create_timesheet():
 
 def enter_start_time():
     enter_todays_date_in_file() 
+    #TODO get current time and write to the row with todays date and at cell start time
     return
 
 
 def enter_end_time():
+    #TODO Get current time and add it to End time column
+    #TODO Calculate total working time 
+    #TODO Add up total month working time
     return
 
 
